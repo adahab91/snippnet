@@ -1,0 +1,153 @@
+@import url("https://use.typekit.net/jny8epr.css");
+.hero-banner-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#myVideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+@media screen and (max-width: 600px) {
+  #myVideo {
+    display: none;
+  }
+}
+
+/* 
+#myVideo-mob{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+    @media screen and (min-width: 600px){
+        display: none;
+    }
+} */
+h1 {
+  font-family: nazare, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 7em;
+  letter-spacing: 3px;
+}
+h1:hover {
+  cursor: default;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+p {
+  color: white;
+  font-family: interstate, sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+p:hover {
+  cursor: default;
+}
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 350px) {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.text--large {
+  font-size: 3em;
+}
+.text--white {
+  color: white;
+}
+
+.text-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.content-container {
+  margin: 20%, 5%;
+}
+
+.background {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .background {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url("./../media/blamyra-mob.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.icon {
+  font-size: 1.3em;
+  padding: 0 10px;
+}
+.icon__insta:hover {
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.contact-info {
+  position: absolute;
+  top: 38%;
+  left: 2%;
+}
+.contact-info__text {
+  font-size: 0.9em;
+}
+.contact-info__text--degree {
+  font-size: 0.65em;
+  margin-top: -30px;
+}
+
+.explore {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.1em;
+  margin-right: 3%;
+  margin-bottom: 2.5%;
+}
+
+/*# sourceMappingURL=styles.css.map */
