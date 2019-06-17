@@ -1,0 +1,63 @@
+header{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    
+}
+
+.toggle-icon{
+    display: block;
+    &__container{
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        display: block;
+        padding: 0 20px;
+    }
+}
+
+
+#toggleIcon[data-icon="on"]{
+    transition: all .6s;
+    opacity: 1;
+}
+
+#toggleIcon[data-icon="off"]{
+    transition: all .6s;
+    opacity: 0;
+}
+
+
+.hamburger{
+    margin: 0 30px;
+    &__link{
+        //padding: 0 30px;
+        min-width: 40px;
+        max-width: 80px;
+        margin: 0 20px; 
+    }
+}
+#menuLinks{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    transition: all 0.3s linear;
+    
+}
+
+#menuLinks[data-toggle="off"]{
+     transition: all .6s, opacity .3s ease;
+     //transition: opacity .3s ease-in-out;
+     left: -400px;
+     opacity: 0;
+}
+
+#menuLinks[data-toggle="on"]{
+     transition: all .6s, opacity .3s ease;
+     //transition: opacity .3s ease-in-out;
+     left: 40px;
+     opacity: 1;
+
+}

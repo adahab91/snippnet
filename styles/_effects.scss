@@ -1,0 +1,15 @@
+
+::selection {
+    background: #ffe700;
+}
+
+.text{
+    &--large{
+        font-size: 3em;
+        color: black;
+    }
+    &--image{
+        font-size: 9em;
+    }
+}
+

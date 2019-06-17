@@ -12,53 +12,73 @@
     <title>Snippnet</title>
   </head>
   <body>
-    <div class="[ container ][ hero-banner-container ]">
-      <video autoplay muted loop id="myVideo" playsinline>
-        <source src="./media/video.mp4" type="video/mp4">
-      </video>
-      <!-- <video autoplay muted loop id="myVideo-mob" playsinline>
-          <source src="./media/video-mob.mp4" type="video/mp4">
-      </video>  -->
-    </div>
-    
-    <!-- <div class="[ container ][ background ]"></div> -->
-    <div class="[ container-fluid ][ text-container ]">
+    <header>
+      
+      <div class="[ hamburger ]">
+        <div class="[ toggle-icon__container ]">
+          <i id="toggleIcon" data-icon="on" class="[ fas fa-bars ][ toggle-icon ]"></i>
+        </div>
+        <div id="menuLinks" data-toggle="off">
+          <ul class="[ list-inline ]">
+            <li class="[ list-inline-item ][ hamburger__link ]">Heim</li>
+            <li class="[ list-inline-item ][ hamburger__link ]">Prosjekt</li>
+            <li class="[ list-inline-item ][ hamburger__link ]">Om meg</li>
+            <li class="[ list-inline-item ][ hamburger__link ]">Kontakt</li>
+          </ul>
+          <!-- <p class="[ hamburger__link ]">Heim</p>
+          <p class="[ hamburger__link ]">Prosjekt</p>
+          <p class="[ hamburger__link ]">Om meg</p>
+          <p class="[ hamburger__link ]">Kontakt</p> -->
+        </div>
+      </div>
+    </header>
+
+    <div class="[ container-fluid ][ hero-banner__full ]">
+      <div class="[ row align-items-center ]">
         <div class="[ col mx-auto text-center ]">
             <h1>snippnet</h1>
-            <p>Eg kan lage ny heimeside til deg,<br> eller oppgradere den du har frå før.</p>
-            <p>Kontakt meg gjerne!</p>
+            <p>Webutvikling som fungerer for alle!</p>
         </div>
-        <!-- <div class="[ col-xs-6 col-sm-5 col-md-3 col-lg-3 col-xl-2 mx-auto ]">
-          <ul>
-              <li>Ada Elise Håberg</li>
-              <li>Tlf: 92 47 76 09</li>
-              <li>E-post: post@snippnet.no</li>
-            </ul>
-        </div> -->
-
-
+      </div>
+        
     </div>
-    <div class="[ contact-info ]">
-      <p class="[ contact-info__text ]">Ada Elise Håberg</p>
-      <p class="[ contact-info__text contact-info__text--degree ]">Front-end Utviklar</p>
-      <p class="[ contact-info__text ]"><i class="fas fa-mobile-alt"></i> 92 47 76 09</p>
-      <p class="[ contact-info__text ]"><i class="far fa-envelope"></i> post@snippnet.no</p>
-      <p class="[ contact-info__text ]"><i class="fas fa-map-marker-alt"></i> Selje kommune, S&F</p>
-    </div>
-    
-
-    <p class="[ explore ]">Lyst til å finne ut meir? <i class="[ fas fa-long-arrow-alt-right ][ icon ]"></i> <i class="[ fab fa-instagram ][ icon icon__insta ]"></i></p>
   
-    
     <div class="[ container ][ content-container ]">
-      <div class="[ col-4 text-center ][  ]">
-        <span class="[ round-bg ]">
-          <p class="[ text--large text--white ]">&LT; &sol; &GT;</p>
-        </span>
-        <p>Lorem ipsum...PS: Dette er ei midlertidig heimeside.PS: Dette er ei midlertidig heimeside.</p>
+      <div class="[ row align-items-center ]">
+        <div class="[ col-6 text-center ]">
+          <p class="[ text--image text--white ]"><i class="fas fa-code"></i></p>
+        </div>
+        <div class="[ col-6 text-center ][ center-content ]">
+          <h3>Nettstadar for alle og ein kvar.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et suscipit sapien, vel euismod nibh. Aenean luctus efficitur ligula non sodales. </p>
+          <a class="[ button ]">Klikk meg</a>
+        </div>
       </div>
     </div>
-        
+
+    <div class="[ container ][ content-container ]">
+      <div class="[ row align-items-center ]">
+        <div class="[ col-6 text-center ][ center-content ]">
+          <h3>Webutviklar + designer = <i class="far fa-thumbs-up"></i></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et suscipit sapien, vel euismod nibh. Aenean luctus efficitur ligula non sodales. </p>
+          <a class="[ button ]">Klikk meg</a>
+        </div>
+        <div class="[ col-6 text-center ]">
+          <p class="[ text--image text--white ]"><i class="far fa-handshake"></i></p>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="[ page-footer ]">
+      <div class="[ container ][ page-footer__container ]">
+        <div class="[ row  ]">
+          <div class="[ col-6 mx-auto ]">
+            <h3>Snippnet</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -67,5 +87,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script/menu.js"></script>
   </body>
 </html>
