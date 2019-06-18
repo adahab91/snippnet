@@ -1,15 +1,24 @@
 
 ::selection {
-    background: #ffe700;
+    background: #00C3FF;
 }
 
 .text{
-    &--large{
-        font-size: 3em;
-        color: black;
-    }
     &--image{
         font-size: 9em;
+        color: $primary-color;
+    }
+    &--white{
+        color: $white;
+    }
+    &--large{
+        font-size: 3em;
+    }
+    &--transparent-black{
+        color: $transparent-black;
+    }
+    &--transparent-white{
+        color: $transparent-white;
     }
 }
 

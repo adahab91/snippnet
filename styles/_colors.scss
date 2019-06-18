@@ -1,13 +1,32 @@
 //PRIMARY COLORS
 $white: rgb(255,250,245); //#FFF5F5
 $black: rgb(27,36,22);
+/* $primary-color: #00C3FF; */
+/* 
+rgb(152,205,196);
+
+rgb(163,191,118);
+
+#99E8A1;
+#52E889;
+
+#F28749;
+#F27405;
+*/
+
+
+
+
+$transparent-white: rgba(255,250,245,.4);
+$transparent-black: rgba(27,36,22,.3);
+
 
 //BORDERS
 
 
 //SECONDARY COLORS
 //Color group nr 1
-$lavendel: rgb(139,105,159);
+$lavendel: rgb(139,105,159); 
 $fjord: rgb(152,205,196);
 $pear: rgb(163,191,118);
 $yellow: rgb(237,228,92);
