@@ -1,0 +1,19 @@
+.team-member{
+    &__image-container{
+
+    }
+    &__image{
+        width: 70%;
+    }
+    &__content-container{
+        background-color: $black;
+        margin-left: 40%;
+        margin-top: -20%;
+        padding: 40px 40px 50px 40px;
+    }
+    &__title{
+        font-style: italic;
+        font-weight: 400;
+        padding-top: 0px;
+    }
+}

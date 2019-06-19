@@ -1,15 +1,18 @@
 
 ::selection {
-    background: #00C3FF;
+    background: $transparent-black;
 }
 
 .text{
     &--image{
         font-size: 9em;
-        color: $primary-color;
+        color: $black;
     }
     &--white{
         color: $white;
+    }
+    &--medium{
+        font-size: 2em;
     }
     &--large{
         font-size: 3em;
@@ -20,5 +23,19 @@
     &--transparent-white{
         color: $transparent-white;
     }
+    &--icon{
+        font-size: 2em;
+        padding-right: 10px;
+        color: $white;
+
+    }
 }
 
+.remove-margin-padding{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    box-shadow: inset 0 -3px 0px $white, inset 0 -9px 0 $primary-color;
+}

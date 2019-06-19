@@ -3,6 +3,7 @@
 @import "effects";
 @import "header";
 @import "footer";
+@import "about";
 
 body{
     background-color: $white;
@@ -33,12 +34,19 @@ h1{
 }
 
 h2{
-
+    font-family: $text;
+    color: $black;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 3px;
+    &:hover{
+        cursor: default;
+    }
 }
 
 h3{
     color: $black;
-    font-family: $large-heading;
+    font-family: $text;
     font-size: 2em;
     letter-spacing: 1px;
     font-weight: 700;
@@ -47,13 +55,16 @@ h3{
 }
 
 
+
+
 p{
     color: $black;
     font-family: $text;
-    font-size: 1em;
+    font-size: .95em;
     letter-spacing: 1px;
     //text-transform: uppercase;
     padding-top: 15px;
+    line-height: 1.6em;
     &:hover{
         cursor: default;
     }
@@ -67,6 +78,10 @@ p{
 a{
     color: $primary-color;
     //text-decoration: underline $primary-color;
+    &:hover{
+        color: $primary-color;
+        cursor: pointer;
+    }
 }
 
 .button{
@@ -95,11 +110,28 @@ a{
 
 
 .content-container{
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: $white;
+    &--illustrations{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    &--top-pg{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
     &--bottom-pg{
         margin-bottom: 400px;
-        padding-bottom: 20%;
+        padding-bottom: 10%;
+    }
+}
+
+.image{
+    max-height: 60vh;
+    border: 5px solid white;
+    filter: grayscale(1);
+    &__container{
+        position: relative;
     }
 }
