@@ -4,6 +4,7 @@
 @import "header";
 @import "footer";
 @import "about";
+@import "contact";
 
 body{
     background-color: $white;
@@ -14,7 +15,7 @@ html{
     }
 
 h1{
-    font-family: $large-heading;
+    font-family: $heading-xl;
     color: $black;
     text-align: center;
     font-size: 7em;
@@ -34,11 +35,13 @@ h1{
 }
 
 h2{
-    font-family: $text;
+    font-family: $heading-lg;
     color: $black;
-    text-align: center;
-    font-size: 3em;
-    letter-spacing: 3px;
+    //text-align: center;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1em;
     &:hover{
         cursor: default;
     }
@@ -46,7 +49,7 @@ h2{
 
 h3{
     color: $black;
-    font-family: $text;
+    font-family: $heading-lg;
     font-size: 2em;
     letter-spacing: 1px;
     font-weight: 700;
@@ -60,7 +63,7 @@ h3{
 p{
     color: $black;
     font-family: $text;
-    font-size: .95em;
+    font-size: 1em;
     letter-spacing: 1px;
     //text-transform: uppercase;
     padding-top: 15px;
@@ -81,6 +84,7 @@ a{
     &:hover{
         color: $primary-color;
         cursor: pointer;
+        text-decoration: none;
     }
 }
 
@@ -90,9 +94,13 @@ a{
     text-transform: uppercase;
     font-family: $text;
     font-weight: 700;
-    border: 1px solid $black;
+    border: 1.5px solid $primary-color;
     padding: 10px;
-    background-color: white;
+    color: $black;
+    display: block;
+    width: 200px;
+    margin: 30px 30px 30px 0;
+    text-align: center;
     &:hover{
         background-color: $primary-color;
         text-decoration: none;
@@ -110,20 +118,20 @@ a{
 
 
 .content-container{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     background-color: $white;
     &--illustrations{
         margin-top: 15%;
         margin-bottom: 15%;
     }
     &--top-pg{
-        margin-top: 10%;
+        margin-top: 12%;
         margin-bottom: 5%;
     }
     &--bottom-pg{
-        margin-bottom: 400px;
-        padding-bottom: 10%;
+        margin-bottom: 50%;
+        padding-bottom: 5%;
     }
 }
 

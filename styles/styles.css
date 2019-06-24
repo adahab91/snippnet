@@ -25,15 +25,21 @@ rgb(163,191,118);
 rgb(255, 71, 71);
 */
 ::selection {
-  background: rgba(27, 36, 22, 0.3);
+  background: #ff4747;
 }
 
 .text--image {
   font-size: 9em;
-  color: #1b2416;
+  color: #1D1915;
 }
 .text--white {
   color: #fffaf5;
+}
+.text--underline {
+  text-decoration: underline;
+}
+.text--center {
+  text-align: center;
 }
 .text--medium {
   font-size: 2em;
@@ -42,7 +48,7 @@ rgb(255, 71, 71);
   font-size: 3em;
 }
 .text--transparent-black {
-  color: rgba(27, 36, 22, 0.3);
+  color: rgba(194, 241, 169, 0.3);
 }
 .text--transparent-white {
   color: rgba(255, 250, 245, 0.4);
@@ -58,10 +64,22 @@ rgb(255, 71, 71);
   padding: 0;
 }
 
-span {
-  box-shadow: inset 0 -3px 0px #fffaf5, inset 0 -9px 0 #ff4747;
+/* span{
+    box-shadow: inset 0 -3px 0px $white, inset 0 -9px 0 $primary-color;
+} */
+/* 
+//SLIDE IN EFFECT ON CONTENT WHEN SCROLLED
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered 
 }
 
+@keyframes come-in {
+  to { transform: translateY(0); }
+} */
 .navigation {
   background-image: linear-gradient(#fffaf5, rgba(255, 250, 245, 0.7), rgba(255, 250, 245, 0));
 }
@@ -73,23 +91,34 @@ span {
   font-family: nazare, sans-serif;
   text-transform: lowercase;
   font-size: 2.5em;
-  color: #1b2416;
+  color: #1D1915;
+  width: 200px;
 }
-.navigation__logosm {
+.navigation__up {
   position: absolute;
   left: 50%;
-  top: -200px;
   transform: translateX(-50%);
-  font-family: nazare, sans-serif;
-  text-transform: lowercase;
-  font-size: 2.5em;
-  color: #1b2416;
+  opacity: 0;
+  padding-top: 7px;
+  margin-left: -2px;
+  transition: opacity 0.3;
+  width: 200px;
+}
+.navigation__down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  padding-top: 7px;
+  margin-left: -2px;
+  transition: opacity 0.3;
+  width: 200px;
 }
 
 .page-footer {
   width: 100%;
-  height: 400px;
-  background-color: #1b2416;
+  height: 50%;
+  background-color: #1D1915;
   text-align: center;
   position: fixed;
   left: 0;
@@ -97,7 +126,7 @@ span {
   z-index: -1;
 }
 .page-footer__container {
-  margin-top: 5%;
+  margin-top: 7%;
 }
 .page-footer__author {
   position: fixed;
@@ -108,12 +137,16 @@ span {
 .page-footer__author--text {
   font-size: 0.8em;
 }
+.page-footer__icon {
+  display: block;
+  margin-top: 40px;
+}
 
 .team-member__image {
   width: 70%;
 }
 .team-member__content-container {
-  background-color: #1b2416;
+  background-color: #1D1915;
   margin-left: 40%;
   margin-top: -20%;
   padding: 40px 40px 50px 40px;
@@ -124,6 +157,13 @@ span {
   padding-top: 0px;
 }
 
+/* .contact{
+    &__map-container{
+        margin-left: 20%;
+        margin-top: -20%;
+
+    }
+} */
 body {
   background-color: #fffaf5;
 }
@@ -134,7 +174,7 @@ html {
 
 h1 {
   font-family: nazare, sans-serif;
-  color: #1b2416;
+  color: #1D1915;
   text-align: center;
   font-size: 7em;
   letter-spacing: 3px;
@@ -159,28 +199,29 @@ h1:hover {
 }
 
 h2 {
-  font-family: interstate, sans-serif;
-  color: #1b2416;
-  text-align: center;
-  font-size: 3em;
-  letter-spacing: 3px;
+  font-family: freight-neo-pro, sans-serif;
+  color: #1D1915;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 1em;
 }
 h2:hover {
   cursor: default;
 }
 
 h3 {
-  color: #1b2416;
-  font-family: interstate, sans-serif;
+  color: #1D1915;
+  font-family: freight-neo-pro, sans-serif;
   font-size: 2em;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
 p {
-  color: #1b2416;
+  color: #1D1915;
   font-family: interstate, sans-serif;
-  font-size: 0.95em;
+  font-size: 1em;
   letter-spacing: 1px;
   padding-top: 15px;
   line-height: 1.6em;
@@ -205,6 +246,7 @@ a {
 a:hover {
   color: #ff4747;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button {
@@ -213,9 +255,13 @@ a:hover {
   text-transform: uppercase;
   font-family: interstate, sans-serif;
   font-weight: 700;
-  border: 1px solid #1b2416;
+  border: 1.5px solid #ff4747;
   padding: 10px;
-  background-color: white;
+  color: #1D1915;
+  display: block;
+  width: 200px;
+  margin: 30px 30px 30px 0;
+  text-align: center;
 }
 .button:hover {
   background-color: #ff4747;
@@ -229,8 +275,8 @@ a:hover {
 }
 
 .content-container {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   background-color: #fffaf5;
 }
 .content-container--illustrations {
@@ -238,12 +284,12 @@ a:hover {
   margin-bottom: 15%;
 }
 .content-container--top-pg {
-  margin-top: 10%;
+  margin-top: 12%;
   margin-bottom: 5%;
 }
 .content-container--bottom-pg {
-  margin-bottom: 400px;
-  padding-bottom: 10%;
+  margin-bottom: 50%;
+  padding-bottom: 5%;
 }
 
 .image {
