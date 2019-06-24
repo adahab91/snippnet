@@ -2,12 +2,16 @@
 @import "colors";
 @import "effects";
 @import "header";
+@import "toggle-menu";
 @import "footer";
 @import "about";
 @import "contact";
 
 body{
     background-color: $white;
+    font-family: $text;
+    letter-spacing: 1px;
+    line-height: 1.6em;
 }
 
 html{
@@ -39,11 +43,17 @@ h2{
     color: $black;
     //text-align: center;
     font-size: 2.8em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 700;
     line-height: 1em;
     &:hover{
         cursor: default;
+    }
+    @media screen and (max-width: 450px){
+        font-size: 2em;
+    }
+    @media screen and (max-width: 350px){
+        font-size: 1.85em;
     }
 }
 
@@ -71,11 +81,11 @@ p{
     &:hover{
         cursor: default;
     }
-    @media screen and (max-width: 600px){
-        font-size: 1.5em;
+    @media screen and (max-width: 991px){
+        font-size: .9em;
     }
-    @media screen and (max-width: 350px){
-        font-size: 1.2em;
+    @media screen and (max-width: 450px){
+        font-size: .8em;
     }
 }
 a{
@@ -111,8 +121,9 @@ a{
 
 .hero-banner{
     &__full{
-        margin-top: 40vh;
-        margin-bottom: 40vh;
+        background-color: $white;
+        padding-top: 40vh;
+        padding-bottom: 40vh;
     }
 }
 
@@ -128,16 +139,24 @@ a{
     &--top-pg{
         margin-top: 12%;
         margin-bottom: 5%;
+        @media screen and (max-width: 991px){
+            margin-top: 20vh;
+        }
+        /* @media screen and (max-width: 767px){
+            margin-top: 20%;
+        }
+        @media screen and (max-width: 576px){
+            margin-top: 25%;
+        } */
     }
     &--bottom-pg{
-        margin-bottom: 50%;
+        margin-bottom: 500px;
         padding-bottom: 5%;
     }
 }
 
 .image{
     max-height: 60vh;
-    border: 5px solid white;
     filter: grayscale(1);
     &__container{
         position: relative;

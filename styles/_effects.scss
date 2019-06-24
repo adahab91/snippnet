@@ -12,7 +12,7 @@
         color: $white;
     }
     &--underline{
-        text-decoration: underline;
+        text-decoration: underline $transparent-white;
     }
     &--center{
         text-align: center;
@@ -61,3 +61,31 @@
 @keyframes come-in {
   to { transform: translateY(0); }
 } */
+
+
+.hide{
+    &--md{
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+    &--lg{
+        @media screen and (max-width: 991px){
+            display: none;
+        }
+    }
+}
+
+.show{
+    &--md{
+        @media screen and (max-width: 767px){
+            display: block;
+        }
+        
+    }
+    &--lg{
+        @media screen and (max-width: 991px){
+            display: block;
+        }
+    }
+}

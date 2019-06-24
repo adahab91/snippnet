@@ -1,15 +1,24 @@
 .team-member{
     &__image-container{
-
+        
     }
     &__image{
-        width: 70%;
+        //width: 70%;
+        border-radius: 1px;
     }
     &__content-container{
         background-color: $black;
         margin-left: 40%;
-        margin-top: -20%;
+        margin-top: -15%;
         padding: 40px 40px 50px 40px;
+        border-radius: 1px;
+        @media screen and (max-width: 991px){
+            margin-left: 30%;
+            padding: 30px 30px 40px 30px;
+        }
+        @media screen and (max-width: 767px){
+            margin: 0 15px 15px;
+        }
     }
     &__title{
         font-style: italic;

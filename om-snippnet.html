@@ -15,37 +15,47 @@
 
 
 
-<!--________nav____________-->
-  <nav class="[ navbar navbar-expand-lg fixed-top ][ navigation ]">
-  <button class="[ navbar-toggler ]" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="[ navbar-toggler-icon ]"></span>
-  </button>
-
-  <div class="[ collapse navbar-collapse ]" id="navbarSupportedContent">
-    <ul class="[ navbar-nav ]">
-        <li class="[ nav-item ][ navigation__item ]">
-        <p><a class="[ nav-link ][ navigation__link ]" href="#">Prosjekt</a></p>
-        </li>
-        <li class="[ nav-item ][ navigation__item ]">
-        <p><a class="[ nav-link ][ navigation__link ]" href="om-snippnet.html">Om snippnet</a></p>
-        </li>
-        <li class="[ nav-item ][ navigation__item ]">
-        <p><a class="[ nav-link ][ navigation__link ]" href="kontakt.html">Kontakt</a></p>
-        </li>
-    </ul>
-  </div>
-
-    <p><a id="snippnetLogo" class="[ text-center ][ navigation__logo ]" href="index.html">snippnet</a></p>
-    <p><a id="snippnetLogoSm" class="[ text-center ][ navigation__logosm ]" href="index.html">s</a></p>
+  <!--_____________NAVIGATION_________________-->
+  <div class="[ container-fluid ]">
+    <nav class="[ navbar navbar-expand-lg fixed-top ][ navigation ]">
     
-    <p class="[  ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p>
-</nav>
-<!--__________/nav______________-->
+    <button class="[ navbar-toggler ][ navigation__toggler ]" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="[ hamburger hamburger--v2 js-toggle ][ navigation__hamburger ]">
+        <div class="[ hamburger__bar ][ navigation__hamburger--bar ]"></div>
+      </div>
+    </button>
+
+    <div class="[ collapse navbar-collapse ][ navigation__collapse ]" id="navbarSupportedContent">
+      <ul class="[ navbar-nav ][ navigation__link-container ]">
+        <li class="[ nav-item ][ navigation__item ]">
+          <p><a class="[ nav-link ][ navigation__link ]" href="#">Prosjekt</a></p>
+        </li>      
+        <li class="[ nav-item ][ navigation__item ]">
+          <p><a class="[ nav-link ][ navigation__link ]" href="om-snippnet.html">Om snippnet</a></p>
+        </li>
+        <li class="[ nav-item ][ navigation__item ]">
+          <p><a class="[ nav-link ][ navigation__link ]" href="kontakt.html">Kontakt</a></p>
+        </li>
+      </ul>
+    </div>
+    
+    <a href="index.html"><img id="snippnetLogo" class="[ navigation__logo ]" src="./img/logo2.png"></a>
+    <a href="index.html"><img id="snippnetLogoUp" class="[ navigation__up ]" src="./img/eyes-up.png"></a>
+    <a href="index.html"><img id="snippnetLogoDown" class="[ navigation__down ]" src="./img/eyes-down.png"></a>
+  
+    <p class="[ change-language__container hide--lg ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p>
+
+  </nav>
+
+  <p class="[ change-language__container show--lg ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p>
+
+</div>
+<!--_____________/NAVIGATION_________________-->
 
 
 <div class="[ container ][ content-container content-container--top-pg  ]">
     <div class="[ row justify-content-center ]">
-        <div class="[ col-9 ][ text--center ]">
+        <div class="[ col-md-9 ][ text--center ]">
             <h2><span>Kva er snippnet?</span></h2>
             <p>Snippnet er eit nyoppstarta digitalbyrå med kompetanse innan webutvikling. Snippnet vart til i 2019 og består av frontend-utviklar Ada Elise Håberg.</p>
             <p>Eg er opptatt av dei små detaljane, og strekker meg langt for å tilby dei beste løysingane.</p>
@@ -59,7 +69,7 @@
         <div class="[ col-md-6 ]">
             <p class="[ text--image text--center  ]"><i class="far fa-handshake"></i></p>
         </div>
-        <div class="[ col-6 ][  ]">
+        <div class="[ col-md-6 ][  ]">
             <h2><span>Kva tenester leverer eg?</span></h2>
             <p><strong>Eg utvikler nettsider.</strong><br>
             Med utdanning innan frontend-utvikling kan eg sikre god kvalitet og brukarvenlegheit på nettsidene eg lagar til deg. Eg står for alt som har med den tekniske implementeringa å gjere, og når nettsida er ferdig held eg drift og support.</p>
@@ -71,14 +81,14 @@
 
 <div class="[ container ][ content-container ]">
     <div class="[ row ]">
-        <div class="[ col-12 ][ team-member__image-container ]">
+        <div class="[ col-xl-8 col-lg-8 col-md-9 ][ team-member__image-container ]">
             <h2>Frontend-utviklaren</h2>
-            <img class="[  ][ image team-member__image ]" src="./img/portrait.jpg">
+            <img class="[ img-fluid ][ image team-member__image ]" src="./img/01NYHAda Elise Håberg.jpg">
         </div>
-        <div class="[ col-6 ][ team-member__content-container ]">
+        <div class="[ col-xl-6 col-lg-6 col-md-8 ][ team-member__content-container ]">
             <h3 class="[ text--white ]">Ada Elise Håberg</h3>
             <p class="[ text--white team-member__title ]">Dagleg leiar, gründer og frontend-utviklar</p>
-            <p class="[ text--white ]">Gründer og eigar av Snippnet. Har fagskuleutdanning innan frontend-utvikling og bachelor i Innovasjonsledelse og Entreprenørskap. Har stor skaparglede og er opptatt av å tilby nettstadar som er effektive, tilgjengelege og visuelt engasjerande. </p>
+            <p class="[ text--white team-member__biography ]">Gründer og eigar av Snippnet. Har fagskuleutdanning innan frontend-utvikling og bachelor i Innovasjonsledelse og Entreprenørskap. Har stor skaparglede og er opptatt av å tilby nettstadar som er effektive, tilgjengelege og visuelt engasjerande. </p>
             <p>
                 <a class="[ text--icon ]" href="https://github.com/adahab91" target="_blank"><i class="fab fa-github"></i></a>
                 <a class="[ text--icon ]" href="https://www.instagram.com/adahaberg/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -93,15 +103,15 @@
         <div class="[ col-12 ][ text--center ]">
             <h2>Slik jobbar eg</h2>
         </div>
-        <div class="[ col-4 ][  ]">
+        <div class="[ col-md-4 ][  ]">
             <h3>1. Research</h3>
             <p> Uansett kven eg jobbar for eller kva oppdraget mitt er, startar eg alltid å med å sette meg inn i kundens kvardag. Kven er kunden deira, korleis jobbar dei, korleis kommuniserar konkurrentane og kva utfordringar skal eg løyse for kunden. Eg går gjennom krava dine, lagar mål for nettsida, prosjektets tidslinjer og viktige milepælar.</p>
         </div>
-        <div class="[ col-4 ][  ]">
+        <div class="[ col-md-4 ][  ]">
             <h3>2. Design og utvikling</h3>
             <p>Eg lagar nettside basert på det kunden ynskjer og har behov for. Eg lagar nettsider tilpassa både web- og mobile løysingar. Dei er interaktive, med god synlegheit for alle robotane og andre som ferdast på internet.</p>
         </div>
-        <div class="[ col-4 ][  ]">
+        <div class="[ col-md-4 ][  ]">
             <h3>3. Kvalitetssikring og lansering</h3>
             <p>Eg vil undervegs informere kunden kring arbeidet eg gjer, og kunden vil kunne fortløpande komme med endringar om ynskjeleg. Det vil vere fleire runder med testing av nettsida på ulike platformar og nettlesarar. Nettsida vert lansert med godkjenning ifrå kunde.</p>
         </div>
@@ -112,16 +122,18 @@
 
 <footer class="[ page-footer ]">
     <div class="[ container ][ page-footer__container ]">
-        <div class="[ row align-items-center ]">
-            <div class="[ col-6 mx-auto ]">
-            <h3 class="[ text--white ]">Snippnet</h3>
-            <p class="[ text--white ]">Kontorplass: Prestebakken Næringsbygg AS, 6740 Selje</p>
-            <a class="[ text--white ]" href="mailto:post@snippnet.no">post@snippnet.no</a>
-            </div>
-            <div class="[ col-7 ][ page-footer__author ]">
-            <p class="[ text--white ][ page-footer__author--text text--transparent-white ]">Webside og illustrasjonar: Ada Elise Håberg.</p>
-            </div>
+    <div class="[ row align-items-center ]">
+        <div class="[ col-6 mx-auto ]">
+        <h3 class="[ text--white ]">Snippnet</h3>
+        <p class="[ text--white ]">Kontorplass: Prestebakken Næringsbygg AS<br>
+        6740 Selje, Norge<br></p>
+        <a class="[ text--white text--underline ]" href="mailto:post@snippnet.no">post@snippnet.no</a><br>
+        <a class="[ page-footer__icon text--icon ]" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
+        <div class="[ col-7 ][ page-footer__author ]">
+        <p class="[ text--white ][ page-footer__author--text text--transparent-white ]">Webside og illustrasjonar: Ada Elise Håberg.</p>
+        </div>
+    </div>
     </div>
 </footer>
 

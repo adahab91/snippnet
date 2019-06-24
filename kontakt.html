@@ -15,32 +15,42 @@
 
 
 
-<!--________nav____________-->
-  <nav class="[ navbar navbar-expand-lg fixed-top ][ navigation ]">
-  <button class="[ navbar-toggler ]" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="[ navbar-toggler-icon ]"></span>
-  </button>
-
-  <div class="[ collapse navbar-collapse ]" id="navbarSupportedContent">
-    <ul class="[ navbar-nav ]">
-      <li class="[ nav-item ][ navigation__item ]">
-        <p><a class="[ nav-link ][ navigation__link ]" href="#">Prosjekt</a></p>
-      </li>
-      <li class="[ nav-item ][ navigation__item ]">
-        <p><a class="[ nav-link ][ navigation__link ]" href="om-snippnet.html">Om snippnet</a></p>
-      </li>
-      <li class="[ nav-item ][ navigation__item ]">
-        <p><a class="[ nav-link ][ navigation__link ]" href="kontakt.html">Kontakt</a></p>
-      </li>
-    </ul>
-  </div>
-
-    <p><a id="snippnetLogo" class="[ text-center ][ navigation__logo ]" href="index.html">snippnet</a></p>
-    <p><a id="snippnetLogoSm" class="[ text-center ][ navigation__logosm ]" href="index.html">s</a></p>
+  <!--_____________NAVIGATION_________________-->
+  <div class="[ container-fluid ]">
+    <nav class="[ navbar navbar-expand-lg fixed-top ][ navigation ]">
     
-    <p class="[  ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p>
-</nav>
-<!--__________/nav______________-->
+    <button class="[ navbar-toggler ][ navigation__toggler ]" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="[ hamburger hamburger--v2 js-toggle ][ navigation__hamburger ]">
+        <div class="[ hamburger__bar ][ navigation__hamburger--bar ]"></div>
+      </div>
+    </button>
+
+    <div class="[ collapse navbar-collapse ][ navigation__collapse ]" id="navbarSupportedContent">
+      <ul class="[ navbar-nav ][ navigation__link-container ]">
+        <li class="[ nav-item ][ navigation__item ]">
+          <p><a class="[ nav-link ][ navigation__link ]" href="#">Prosjekt</a></p>
+        </li>      
+        <li class="[ nav-item ][ navigation__item ]">
+          <p><a class="[ nav-link ][ navigation__link ]" href="om-snippnet.html">Om snippnet</a></p>
+        </li>
+        <li class="[ nav-item ][ navigation__item ]">
+          <p><a class="[ nav-link ][ navigation__link ]" href="kontakt.html">Kontakt</a></p>
+        </li>
+      </ul>
+    </div>
+    
+    <a href="index.html"><img id="snippnetLogo" class="[ navigation__logo ]" src="./img/logo2.png"></a>
+    <a href="index.html"><img id="snippnetLogoUp" class="[ navigation__up ]" src="./img/eyes-up.png"></a>
+    <a href="index.html"><img id="snippnetLogoDown" class="[ navigation__down ]" src="./img/eyes-down.png"></a>
+  
+    <p class="[ change-language__container hide--lg ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p>
+
+  </nav>
+
+  <p class="[ change-language__container show--lg ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p>
+
+</div>
+<!--_____________/NAVIGATION_________________-->
 
 
 <div class="[ container ][ content-container content-container--top-pg ]">
@@ -77,18 +87,20 @@
 
 
 <footer class="[ page-footer ]">
-    <div class="[ container ][ page-footer__container ]">
-        <div class="[ row align-items-center ]">
-            <div class="[ col-6 mx-auto ]">
-            <h3 class="[ text--white ]">Snippnet</h3>
-            <p class="[ text--white ]">Kontorplass: Prestebakken Næringsbygg AS, 6740 Selje</p>
-            <a class="[ text--white ]" href="mailto:post@snippnet.no">post@snippnet.no</a>
-            </div>
-            <div class="[ col-7 ][ page-footer__author ]">
-            <p class="[ text--white ][ page-footer__author--text text--transparent-white ]">Webside og illustrasjonar: Ada Elise Håberg.</p>
-            </div>
-        </div>
+  <div class="[ container ][ page-footer__container ]">
+    <div class="[ row align-items-center ]">
+      <div class="[ col-6 mx-auto ]">
+        <h3 class="[ text--white ]">Snippnet</h3>
+        <p class="[ text--white ]">Kontorplass: Prestebakken Næringsbygg AS<br>
+        6740 Selje, Norge<br></p>
+        <a class="[ text--white text--underline ]" href="mailto:post@snippnet.no">post@snippnet.no</a><br>
+        <a class="[ page-footer__icon text--icon ]" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="[ col-7 ][ page-footer__author ]">
+        <p class="[ text--white ][ page-footer__author--text text--transparent-white ]">Webside og illustrasjonar: Ada Elise Håberg.</p>
+      </div>
     </div>
+  </div>
 </footer>
 
 
