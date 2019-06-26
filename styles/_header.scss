@@ -14,7 +14,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      border: 3px solid $primary-color;
+      border: 1.5px solid $primary-color;
       z-index: 10;
     }
   }
@@ -25,6 +25,12 @@
     z-index: 11;
     &:focus{
       outline:0;
+    }
+    @media screen and (max-width: 991px){
+        background-color: white;
+        border-radius: 100px;
+        height: 50px;
+        width: 50px;
     }
     @media screen and (max-width: 450px){
         top: 22px;
@@ -39,32 +45,38 @@
     margin-left: 20px;
     margin-top: 3px;
     @media screen and (max-width: 991px){
-      text-align: center;
-      margin-top: 50%;
       height: 100vh;
-      margin-left: 0;
+      text-align: center;
+      margin-top: 30vh;
     }
   }
   &__link{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: .9em;
     @media screen and (max-width: 991px){
       font-family: $heading-lg;
       color: $black;
-      font-size: 2.8em;
+      font-size: 44.8px;
       letter-spacing: 2px;
       font-weight: 700;
       line-height: 1em;
+      text-transform: none;
+      &:hover{
+        color: $black;
+        text-decoration: underline $grey;
+      }
     }
     @media screen and (max-width: 450px){
-        font-size: 2em;
-    }
-    @media screen and (max-width: 350px){
-        font-size: 1.85em;
+        font-size: 29.6px;
     }
   }
   &__logo{
     position: fixed;
     left: 50%;
     top: 20px;
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     font-family: $heading-xl;
     text-transform: lowercase;
@@ -87,6 +99,7 @@
     position: fixed;
     left: 50%;
     top: 20px;
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0;
     margin-left: -2px;
@@ -109,6 +122,7 @@
     position: fixed;
     left: 50%;
     top: 20px;
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0;
     margin-left: -2px;
@@ -150,3 +164,13 @@
   }
 }
 
+.active{
+    border-bottom: 1.5px solid $primary-color;
+    @media screen and (min-width: 992px){
+        padding: 0;
+    }
+    @media screen and (max-width: 991px){
+        border-bottom: none;
+        text-decoration: underline $primary-color;
+    }
+}
