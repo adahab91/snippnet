@@ -129,8 +129,10 @@ a{
 .hero-banner{
     &__full{
         background-color: $white;
-        padding-top: 40vh;
-        padding-bottom: 40vh;
+        height: 100vh;
+    }
+    &__image{
+        margin-top: 20vh;
     }
 }
 
@@ -170,5 +172,8 @@ a{
     }
     &__illustration{
         max-height: 60vh;
+        &--margin{
+            padding: 0 20px;
+        }
     }
 }

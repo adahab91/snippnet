@@ -324,7 +324,7 @@ rgb(255, 71, 71);
 
 .kjem-snart {
   height: 100vh;
-  padding-top: 50%;
+  padding-top: 20%;
 }
 
 .team-member__image {
@@ -354,8 +354,11 @@ rgb(255, 71, 71);
   padding-top: 0px;
 }
 
+.work-process {
+  padding: 40px;
+}
 .work-process__image-container {
-  height: 300px;
+  height: 250px;
 }
 .work-process__image {
   position: absolute;
@@ -364,6 +367,7 @@ rgb(255, 71, 71);
   left: 0;
   right: 0;
   margin: auto;
+  padding: 30px 30px 0 30px;
 }
 .work-process__image1 {
   height: 170px;
@@ -584,8 +588,10 @@ a:hover {
 
 .hero-banner__full {
   background-color: #fffaf5;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
+  height: 100vh;
+}
+.hero-banner__image {
+  margin-top: 20vh;
 }
 
 .content-container {
@@ -630,6 +636,9 @@ a:hover {
 }
 .image__illustration {
   max-height: 60vh;
+}
+.image__illustration--margin {
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
