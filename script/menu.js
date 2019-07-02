@@ -24,13 +24,13 @@ window.addEventListener("scroll",function(e){
 
   var newValue = window.pageYOffset;
   
-  if(window.pageYOffset > 200){
+  if(window.pageYOffset > 20){
    snippnetLogo.style.opacity= "0";
     snippnetLogo.style.transition = "all 0.5s";
   } else{
       snippnetLogo.style.opacity = "1";
   }
-  if(window.pageYOffset < 201){
+  if(window.pageYOffset < 21){
     //snippnetLogoDown.style.top = "-200px";
     snippnetLogoDown.style.opacity = "0";
     snippnetLogoDown.style.transition = "all 0.3s";
