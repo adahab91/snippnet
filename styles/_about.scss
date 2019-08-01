@@ -1,9 +1,5 @@
 .team-member{
-    &__image-container{
-        
-    }
     &__image{
-        //width: 70%;
         border-radius: 1px;
     }
     &__content-container{
@@ -29,13 +25,12 @@
 
 
 .work-process{
-    padding: 40px;
+    padding: 0 40px 40px;
     @media screen and (max-width: 576px){
         padding: 20px;
     } 
     &__image-container{
         height: 250px;
-        //padding: 50px;
         @media screen and (max-width: 576px){
             height: 180px;
         } 
