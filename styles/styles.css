@@ -90,6 +90,9 @@ rgb(255, 71, 71);
     margin-top: 25%;
   }
 }
+.page-footer__logo {
+  width: 160px;
+}
 .page-footer__author {
   position: fixed;
   bottom: 0;
