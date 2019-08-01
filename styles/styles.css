@@ -77,6 +77,11 @@ rgb(255, 71, 71);
   bottom: 0;
   z-index: -1;
 }
+@media screen and (max-width: 768px) {
+  .page-footer {
+    height: 450px;
+  }
+}
 @media screen and (max-width: 450px) {
   .page-footer {
     height: 450px;
@@ -92,6 +97,11 @@ rgb(255, 71, 71);
 }
 .page-footer__logo {
   width: 160px;
+}
+@media screen and (max-width: 768px) {
+  .page-footer__logo {
+    margin-top: 40px;
+  }
 }
 .page-footer__author {
   position: fixed;
@@ -655,7 +665,7 @@ a:hover {
   color: #1D1915;
   display: block;
   width: 200px;
-  margin: 30px 30px 30px 0;
+  margin: 30px 30px 0px 0;
   text-align: center;
 }
 .button:hover {
@@ -682,8 +692,18 @@ a:hover {
   background-color: #fffaf5;
   height: 100vh;
 }
+@media screen and (width: 768px) {
+  .hero-banner__full {
+    height: 85vh;
+  }
+}
 .hero-banner__image {
   margin-top: 20vh;
+}
+@media screen and (width: 768px) {
+  .hero-banner__image {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 576px) {
   .hero-banner__image {
@@ -695,10 +715,16 @@ a:hover {
   padding-top: 7%;
   background-color: #fffaf5;
 }
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 @media screen and (max-width: 576px) {
   .content-container {
-    padding-top: 20%;
-    margin-bottom: 20%;
+    padding-top: 25%;
+    padding-bottom: 0;
     text-align: center;
   }
 }
@@ -733,9 +759,13 @@ a:hover {
   margin-bottom: 500px;
   padding-bottom: 10%;
 }
+@media screen and (max-width: 768px) {
+  .content-container--bottom-pg {
+    margin-bottom: 450px;
+  }
+}
 @media screen and (max-width: 576px) {
   .content-container--bottom-pg {
-    margin-top: 20%;
     padding-bottom: 20%;
     margin-bottom: 450px;
     text-align: center;
@@ -744,7 +774,6 @@ a:hover {
 
 .image {
   max-height: 60vh;
-  filter: grayscale(1);
 }
 .image__container {
   position: relative;

@@ -7,6 +7,9 @@
     left: 0;
     bottom: 0;
     z-index: -1;
+    @media screen and (max-width: 768px){
+        height: 450px;
+    }
     @media screen and (max-width: 450px){
         height: 450px;
     }
@@ -17,7 +20,10 @@
         }
     }
     &__logo{
-        width: 160px;
+        width: 160px; 
+        @media screen and (max-width: 768px){
+            margin-top: 40px;
+        }
     }
     &__author{
         position: fixed;

@@ -118,7 +118,7 @@ a{
     color: $black;
     display: block;
     width: 200px;
-    margin: 30px 30px 30px 0;
+    margin: 30px 30px 0px 0;
     text-align: center;
     &:hover{
         background-color: $primary-color;
@@ -131,6 +131,7 @@ a{
         font-size: .7em;
         margin-right: auto;
         margin-left: auto;
+        //margin-bottom: 0;
     } 
     &--lg{
         width: 250px;
@@ -144,9 +145,15 @@ a{
     &__full{
         background-color: $white;
         height: 100vh;
+        @media screen and (width: 768px){
+            height: 85vh;
+        }
     }
     &__image{
         margin-top: 20vh;
+        @media screen and (width: 768px){
+            width: 60%;
+        }
         @media screen and (max-width: 576px){
             max-width: 80%;
         } 
@@ -157,9 +164,13 @@ a{
 .content-container{
     padding-top: 7%;
     background-color: $white;
+    @media screen and (max-width: 768px){
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
     @media screen and (max-width: 576px){
-        padding-top: 20%;
-        margin-bottom: 20%;
+        padding-top: 25%;
+        padding-bottom: 0;
         text-align: center;
     }
     &--top-pg{
@@ -185,8 +196,11 @@ a{
     &--bottom-pg{
         margin-bottom: 500px;
         padding-bottom: 10%;
+        @media screen and (max-width: 768px){
+            margin-bottom: 450px;
+        }
         @media screen and (max-width: 576px){
-            margin-top: 20%;
+            //margin-top: 20%;
             padding-bottom: 20%;
             margin-bottom: 450px;
             text-align: center;
@@ -196,7 +210,7 @@ a{
 
 .image{
     max-height: 60vh;
-    filter: grayscale(1);
+    //filter: grayscale(1);
     &__container{
         position: relative;
     }
