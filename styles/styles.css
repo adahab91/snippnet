@@ -87,12 +87,37 @@ rgb(255, 71, 71);
     height: 450px;
   }
 }
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .page-footer {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .page-footer {
+    height: 350px;
+  }
+}
 .page-footer__container {
   margin-top: 7%;
 }
 @media screen and (max-width: 450px) {
   .page-footer__container {
     margin-top: 25%;
+  }
+}
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .page-footer__container {
+    margin-top: 20%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .page-footer__container {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 580px) and (orientation: landscape) {
+  .page-footer__container {
+    margin-top: 8%;
   }
 }
 .page-footer__logo {
@@ -123,25 +148,60 @@ rgb(255, 71, 71);
   }
 }
 
+.project {
+  padding-bottom: 10%;
+}
+.project__container {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 500px;
+}
+@media screen and (max-width: 768px) {
+  .project__container {
+    margin-bottom: 450px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project__container {
+    padding-bottom: 20%;
+    margin-bottom: 450px;
+  }
+}
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .project__container {
+    margin-bottom: 450px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .project__container {
+    padding-bottom: 10%;
+    margin-bottom: 350px;
+  }
+}
+.project__row {
+  justify-content: flex-end;
+}
 .project__image {
-  border-radius: 4px;
+  border-radius: 3px;
+}
+.project__image-container {
+  margin: 0;
+  padding: 0;
+}
+.project__image-container--right {
+  text-align: end;
 }
 .project__content-container {
+  background-color: #1D1915;
   margin-left: 50%;
-  margin-top: -15%;
-  padding: 40px 40px 50px 40px;
-  border-radius: 1px;
-  text-align: left;
+  margin-top: -10%;
+  padding: 40px;
+  border-radius: 2px;
 }
 @media screen and (max-width: 991px) {
   .project__content-container {
     margin-left: 30%;
-    padding: 30px 30px 40px 30px;
-  }
-}
-@media screen and (max-width: 860px) {
-  .project__content-container {
-    margin-left: 28%;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -149,23 +209,30 @@ rgb(255, 71, 71);
     margin: 0 15px 15px;
   }
 }
-.project__content-container--black {
+.project__content-container--right {
   background-color: #1D1915;
-  color: #fffaf5;
+  margin-right: 50%;
+  margin-top: -10%;
+  padding: 40px;
+  border-radius: 2px;
 }
-.project__content-container--white {
-  background-color: white;
-  border: 2px solid #ff4747;
+@media screen and (max-width: 991px) {
+  .project__content-container--right {
+    margin-left: 30%;
+    padding: 30px;
+  }
 }
-.project__title {
-  font-style: italic;
-  font-weight: 400;
-  padding-top: 0px;
+@media screen and (max-width: 767px) {
+  .project__content-container--right {
+    margin: 0 15px 15px;
+  }
 }
-.project__role {
-  font-size: 0.7em;
-  margin: 0;
-  padding: 0;
+.project__biography {
+  font-size: 0.9em;
+}
+.project__creators {
+  font-size: 0.85em;
+  line-height: 2em;
 }
 
 .team-member__image {
@@ -602,6 +669,11 @@ h2:hover {
     font-size: 1.85em;
   }
 }
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  h2 {
+    font-size: 2em;
+  }
+}
 
 h3 {
   color: #1D1915;
@@ -697,6 +769,16 @@ a:hover {
     height: 85vh;
   }
 }
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .hero-banner__full {
+    height: 60vw;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .hero-banner__full {
+    height: 75vw;
+  }
+}
 .hero-banner__image {
   margin-top: 20vh;
 }
@@ -708,6 +790,16 @@ a:hover {
 @media screen and (max-width: 576px) {
   .hero-banner__image {
     max-width: 80%;
+  }
+}
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .hero-banner__image {
+    padding-top: 5vw;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .hero-banner__image {
+    padding-top: 10vw;
   }
 }
 
@@ -726,6 +818,11 @@ a:hover {
     padding-top: 25%;
     padding-bottom: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .content-container {
+    padding-top: 15%;
   }
 }
 .content-container--top-pg {
@@ -771,6 +868,17 @@ a:hover {
     text-align: center;
   }
 }
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .content-container--bottom-pg {
+    margin-bottom: 450px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .content-container--bottom-pg {
+    padding-bottom: 10%;
+    margin-bottom: 350px;
+  }
+}
 
 .image {
   max-height: 60vh;
@@ -794,6 +902,11 @@ a:hover {
 @media screen and (max-width: 350px) {
   .image__illustration {
     max-height: 250px;
+  }
+}
+@media screen and (max-width: 820px) and (orientation: landscape) {
+  .image__illustration {
+    max-height: 300px;
   }
 }
 .image__illustration--margin {

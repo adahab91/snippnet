@@ -13,10 +13,25 @@
     @media screen and (max-width: 450px){
         height: 450px;
     }
+    @media screen and (max-width: 820px) and (orientation: landscape){
+        height: 450px;
+    }
+    @media screen and (max-width: 768px) and (orientation: landscape){
+        height: 350px;
+    }
     &__container{
         margin-top: 7%;
         @media screen and (max-width: 450px){
             margin-top: 25%;
+        }
+        @media screen and (max-width: 820px) and (orientation: landscape){
+            margin-top: 20%;
+        }
+        @media screen and (max-width: 768px) and (orientation: landscape){
+            margin-top: 2%;
+        }
+        @media screen and (max-width: 580px) and (orientation: landscape){
+            margin-top: 8%;
         }
     }
     &__logo{
