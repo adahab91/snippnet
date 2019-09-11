@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Snippnet</title>
+    <title>Prosjekt - Snippnet</title>
     <meta name="description" content="Digitalbyrå i Stad, med kompetanse innan webutvikling. Med auge for detaljar og lidenskap, byggjer eg nettsider som er interessante, effektive og tilgjengelige.">
 
 
@@ -21,10 +21,10 @@
     
   </head>
   <body>
+    <button onclick='window.scrollTo({top: 0, behavior: "smooth"});' id="myBtn" title="Go to top">&uparrow;</button>
 
   <!--_____________NAVIGATION_________________-->
-  <div class="[ container-fluid ]">
-    <nav class="[ navbar navbar-expand-lg fixed-top ][ navigation ]">
+  <nav class="[ navbar navbar-expand-lg ][ navigation ]">
     
     <button class="[ navbar-toggler ][ navigation__toggler ]" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <div class="[ hamburger hamburger--v2 js-toggle ][ navigation__hamburger ]">
@@ -49,19 +49,10 @@
     <a href="/"><img id="snippnetLogo" class="[ navigation__logo ]" src="./img/logo1.png"></a>
     <a href="/"><img id="snippnetLogoUp" class="[ navigation__up ]" src="./img/eyesup.png"></a>
     <a href="/"><img id="snippnetLogoDown" class="[ navigation__down ]" src="./img/eyesdown.png"></a>
-  
-    <!-- <p class="[ change-language__container hide--lg ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p> -->
-
   </nav>
 
-  <!-- <p class="[ change-language__container show--lg ] "><a href="#" class="[ change-language ]">NO /</a><a href="#">EN</a></p> -->
-
-</div>
 <!--_____________/NAVIGATION_________________-->
-
-<div class="[ project__container ]">
-
-  <div class="[ container ][ content-container content-container--top-pg  ]">
+<div class="[ container ][ content-container content-container--top-pg  ]">
     <div class="[ row justify-content-center ]">
         <div class="[ col-md-9 ][ text--center ]">
             <h2><span>Mine prosjekt</span></h2>
@@ -70,18 +61,32 @@
     </div>
   </div>
 
+
+<div class="[ project__container ]">
   <!--Blåmyra-->
   <div class="[ container-fluid ][ content-container project ]">
     <div class="[ row ]">
         <div class="[ col-xl-11 col-lg-11 col-md-11 ][ project__image-container ]">
-            <a class="[ project__image-link ]" target="_blank" href="https://blaamyra.no/"><img class="[ img-fluid ][ project__image project__image--web ]" src="./img/projects/blaamyra-browser.png"></a>
-            <a class="[ project__image-link ]" target="_blank" href="https://blaamyra.no/"><img class="[ img-fluid ][ project__image project__image--phone ]" src="./img/projects/blaamyra-phone.png"></a>
+            <a class="[ project__image-link ]" target="_blank" href="https://blaamyra.no/"><img class="[ img-fluid ][ project__image ]" src="./img/projects/blaamyra-browser.png"></a>
         </div>
         <div class="[ col-xl-6 col-lg-7 col-md-8 ][ project__content-container ]">
-            <h3 class="[ text--white project__title ]">Blåmyra</h3>
-            <p class="[ text--white project__biography ]">Blåmyra AS er eit nyoppstarta designbyrå, med fokus på merkevarebygging og produktutvikling. Byrået held til ved Stadhavet i Selje. Eg fekk i oppdrag å byggje den midlertidige heimesida deira.</p>
-            <p class="[ text--white project__creators ]">MI ROLLE: Front-end og back-end <br>
-                                              DESIGN: Blåmyra AS</br>
+            <h3 class="[ project__title ]">Blåmyra</h3>
+            <p class="[ project__biography ]">Blåmyra AS er eit nyoppstarta designbyrå, med fokus på merkevarebygging og produktutvikling. Byrået held til ved Stadhavet i Selje. Eg fekk i oppdrag å byggje den midlertidige heimesida deira.</p>
+            <p class="[ project__creators ]"><strong>MI ROLLE:</strong> Front-end og back-end <br>
+                                              <strong>DESIGN:</strong> Blåmyra AS</br>
+        </div>
+    </div>
+  </div>
+
+  <!--Vitnemål-->
+  <div class="[ container-fluid ][ content-container project ]">
+    <div class="[ row ]">
+        <div class="[ col-xl-11 col-lg-11 col-md-11 ][ project__image-container ]">
+            <img class="[ img-fluid ][ project__image project__image--vertical-image ]" src="./img/projects/vitnemaal.jpg">
+        </div>
+        <div class="[ col-xl-6 col-lg-7 col-md-8 ][ project__content-container ]">
+            <h3 class="[ project__title ]">Vitnemål</h3>
+            <p class="[ project__biography ]">Fullførte studie innan frontend-utvikling i 2019. Eg tilegna meg kompetanse i grunnleggjande designprensipp, universel utforming, heilhetlige brukaropplevingar og tekniske løysingar som oppfyller dagens krav og behov.</br>
         </div>
     </div>
   </div>
@@ -91,27 +96,31 @@
   <div class="[ container-fluid ][ content-container project ]">
     <div class="[ row ][ project__row ]">
         <div class="[ col-xl-10 col-lg-12 col-md-12 ][ project__image-container project__image-container--right ]">
-            <img class="[ img-fluid float-right ][ project__image project__image--web ]" src="./img/projects/selje-treningssenter-browser.jpg">
-            <img class="[ img-fluid float-right ][ project__image project__image--phone ]" src="./img/projects/selje-treningssenter-mob.jpg">
+            <a class="project__image-link" href="https://www.seljetreningssenter.no"> <img class="[ img-fluid float-right ][ project__image ]" src="./img/projects/selje-treningssenter-browser.jpg"></a>
         </div>
-        <div class="[  col-xl-6 col-lg-7 col-md-8 ][ project__content-container--right ]">
-            <h3 class="[ text--white project__title ]">Selje Treningssenter</h3>
-            <p class="[ text--white project__biography ]">Selje Treningssenter jobbar for å tilby eit variert og godt treningstilbod til innbyggjarane og tilreisande i Selje. Dette var mi avsluttande eksamensoppgåve innan studiet frontend-utvikling (via Noroff, School of technology and digital media). Heimesida er laga i Angular.</p>
-            <p class="[ text--white project__creators ]">MI ROLLE: Front-end utvikling og drift.<br>
-                                              DESIGN: Ada Elise Håberg</br>
+        <div class="[  col-xl-6 col-lg-7 col-md-8 ][ project__content-container project__content-container--right ]">
+            <h3 class="[ project__title ]">Selje Treningssenter</h3>
+            <p class="[ project__biography ]">Selje Treningssenter jobbar for å tilby eit variert og godt treningstilbod til innbyggjarane og tilreisande i Selje. Dette var mi avsluttande eksamensoppgåve innan studiet frontend-utvikling (via Noroff, School of technology and digital media). Heimesida er laga i Angular.</p>
+            <p class="[ project__creators ]"><strong>MI ROLLE:</strong> Front-end utvikling og drift.<br>
+                                              <strong>DESIGN:</strong> Ada Elise Håberg</br>
+        </div>
+    </div>
+  </div>
+
+  <!--GameofBoards-->
+  <div class="[ container-fluid ][ content-container project ]">
+    <div class="[ row ]">
+        <div class="[ col-xl-11 col-lg-11 col-md-11 ][ project__image-container ]">
+            <a class="[ project__image-link ]" target="_blank" href="http://gameofboards.no/"><img class="[ img-fluid ][ project__image ]" src="./img/projects/gameofboards.jpg"></a>
+        </div>
+        <div class="[ col-xl-6 col-lg-7 col-md-8 ][ project__content-container ]">
+            <h3 class="[ project__title ]">Game of Boards</h3>
+            <p class="[ project__biography ]">I kombinasjon med utdanninga mi som frontend-utviklar laga eg eit Game of Thrones spel. Oppgåva var å lage eit online brettspel med Game of Thrones som tema. Eg skulle bruke ein gitt API og lage spelet ved hjelp av HTML, CSS, jQuery og JavaScript.</br>
         </div>
     </div>
   </div>
 
 </div>
-
-
-
-
-
-
-
-
 
     <footer class="[ page-footer ]">
       <div class="[ container ][ page-footer__container ]">
@@ -121,7 +130,7 @@
             <p class="[ text--white ]">Kontorplass: Prestebakken <nobr>Næringsbygg AS</nobr><br>
         6740 Selje, Norge<br></p>
             <a class="[ text--white text--underline ]" href="mailto:post@snippnet.no">post@snippnet.no</a><br>
-            <a class="[ page-footer__icon text--icon ]" href="https://www.facebook.com/Snippnet-1698811780222085/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="[ page-footer__icon text--icon text--white ]" href="https://www.facebook.com/Snippnet-1698811780222085/" target="_blank"><i class="fa fa-facebook"></i></a>
           </div>
           <div class="[ col-md-7 ][ page-footer__author ]">
             <p class="[ text--white ][ page-footer__author--text text--transparent-white ]">Webside og illustrasjonar: <nobr>Ada Elise Håberg.</nobr></p>
@@ -130,11 +139,6 @@
       </div>
     </footer>
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
