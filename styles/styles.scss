@@ -8,6 +8,7 @@
 @import "effects";
 @import "header";
 @import "projects";
+@import "hero-banner";
 
 body{
     background-color: $white;
@@ -43,10 +44,9 @@ h1{
 h2{
     font-family: $heading-lg;
     color: $black;
-    font-size: 2.8em;
+    font-size: 2.5em;
     letter-spacing: 2px;
-    //font-weight: 700;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1em;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -84,7 +84,8 @@ h3{
 h4{
     margin-top: 20px;
     margin-bottom: 0px;
-    text-decoration: underline $primary-color;
+    height: 70px;
+    //text-decoration: underline $primary-color;
     font-weight: 700;
 }
 
@@ -98,7 +99,7 @@ p{
     padding-top: 15px;
     line-height: 1.6em;
 
-    font-weight: 200;
+    font-weight: 300;
 
     &:hover{
         cursor: default;
@@ -158,49 +159,6 @@ a{
 }
 
 
-.hero-banner{
-    &__full{
-        background-color: $white;
-        max-height: 100vh;
-        overflow: hidden;
-        //ipad pro
-        @media screen and (max-width: 768px){
-            margin: 0% 0 17% 0;
-            padding-right: 10%;
-            padding-left: 10%;
-        }
-        @media screen and (max-width: 576px){
-            margin: 20% 0 17% 0;
-        }
-        @media screen and (max-width: 820px) and (orientation: landscape){
-            max-height: 60vw;
-        }
-        @media screen and (max-width: 768px) and (orientation: landscape){
-            max-height: 75vw;
-        }
-        @media screen and (max-width: 768px){
-            
-        }
-    }
-    &__image{
-        margin-top: 3%;
-        @media screen and (max-width: 991px){
-            margin-top: 15%;
-        }
-        @media screen and (max-width: 768px){
-            margin-top: 25%;
-        }
-        @media screen and (max-width: 576px){
-            max-width: 80%;
-        } 
-        @media screen and (max-width: 820px) and (orientation: landscape){
-            padding-top: 5vw;
-        }
-        @media screen and (max-width: 768px) and (orientation: landscape){
-            padding-top: 10vw;
-        }
-    }
-}
 
 .content-container{
     padding-top: 15%;
@@ -260,13 +218,13 @@ a{
 }
 
 .image{
-    max-height: 60vh;
+    //max-height: 60vh;
     //filter: grayscale(1);
     &__container{
         position: relative;
     }
     &__illustration{
-        max-height: 60vh;
+        max-height: 50vh;
         
         @media screen and (max-width: 576px){
             max-height: 350px;

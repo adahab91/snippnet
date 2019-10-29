@@ -1,0 +1,44 @@
+
+.hero-banner{
+    &__full{
+        background-color: $white;
+        min-height: 100%;
+        //ipad pro
+        @media screen and (max-width: 768px){
+            margin: 0% 0 17% 0;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        @media screen and (max-width: 576px){
+            margin: 20% 0 17% 0;
+        }
+        @media screen and (max-width: 820px) and (orientation: landscape){
+            max-height: 60vw;
+        }
+        @media screen and (max-width: 768px) and (orientation: landscape){
+            max-height: 75vw;
+        }
+        @media screen and (max-width: 768px){
+            
+        }
+    }
+    &__image{
+        max-height: 50vh;
+        margin-top: 3%;
+        @media screen and (max-width: 991px){
+            margin-top: 15%;
+        }
+        @media screen and (max-width: 768px){
+            margin-top: 25%;
+        }
+        @media screen and (max-width: 576px){
+            max-width: 80%;
+        } 
+        @media screen and (max-width: 820px) and (orientation: landscape){
+            padding-top: 5vw;
+        }
+        @media screen and (max-width: 768px) and (orientation: landscape){
+            padding-top: 10vw;
+        }
+    }
+}

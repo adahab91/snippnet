@@ -4,3 +4,18 @@
         order: 2;
     }
 }
+
+.arrow-down{
+    width: 20px;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    animation: bump 2s ease infinite;
+
+}
+
+@keyframes bump{
+    0%   {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
