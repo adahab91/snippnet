@@ -7,8 +7,8 @@
 
 .arrow-down{
     width: 20px;
-    position: absolute;
-    bottom: -100px;
+    position: fixed;
+    bottom: 100px;
     left: 50%;
     animation: bump 2s ease infinite;
 

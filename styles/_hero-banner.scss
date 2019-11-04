@@ -2,7 +2,7 @@
 .hero-banner{
     &__full{
         background-color: $white;
-        min-height: 100%;
+        //height: 100vh;
         //ipad pro
         @media screen and (max-width: 768px){
             margin: 0% 0 17% 0;
