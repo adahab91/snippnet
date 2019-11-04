@@ -266,9 +266,15 @@ rgb(255, 71, 71);
   max-width: 300px;
 }
 
+.contact__map-container {
+  margin-left: -200px;
+  margin-bottom: -100px;
+  margin-top: 100px;
+}
 @media screen and (max-width: 576px) {
   .contact__map-container {
-    padding: 0;
+    margin: 0;
+    height: 400px;
   }
 }
 
