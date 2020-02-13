@@ -24,9 +24,6 @@
         @media screen and (max-width: 800px){
             margin-top: 15%;
         }
-        /* @media screen and (max-width: 450px){
-            margin-top: 15%;
-        } */
         @media screen and (max-width: 1050px) and (orientation: landscape){
             margin-top: 12%;
         }
@@ -42,9 +39,6 @@
     }
     &__logo{
         width: 160px; 
-        @media screen and (max-width: 768px){
-            
-        }
     }
     &__author{
         position: fixed;
