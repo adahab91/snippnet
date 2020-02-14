@@ -19,7 +19,7 @@ function showProject(){
         document.getElementById('show-project-row2').innerHTML = '';
         document.getElementById('show-project-row1').innerHTML = '<div class="[ row ]">'+ 
             '<div class="[ col-md-8 ][ project ]">' + 
-                '<img src="./img/projects/helgasmatblogg-screen.png" class="[ img-fluid ]">' + 
+                '<img src="./img/projects/helgasmatblogg-screen.jpg" class="[ img-fluid ]">' + 
             '</div>' +
             '<div class="[ col-md-4 ][ project ]">' + 
                 '<h3 class="[ project__heading ]">Helgas Matblogg</h3>' + 
@@ -51,7 +51,7 @@ function showProject(){
         document.getElementById('show-project-row1').innerHTML = '';
         document.getElementById('show-project-row2').innerHTML = '<div class="[ row ]">'+ 
             '<div class="[ col-md-8 ][ project ]">' + 
-                '<img src="./img/projects/selje-treningssenter.gif" class="[ img-fluid ]">' + 
+                '<img src="./img/projects/selje-treningssenter.jpg" class="[ img-fluid ]">' + 
             '</div>' +
             '<div class="[ col-md-4 ][ project ]">' + 
                 '<h3 class="[ project__heading ]">Selje Treningssenter</h3>' + 

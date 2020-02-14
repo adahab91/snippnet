@@ -646,7 +646,9 @@ rgb(255, 71, 71);
 }
 @media screen and (max-width: 768px) {
   .project__image-text {
-    left: 20px;
+    left: 10px;
+    bottom: -10px;
+    transition: none;
   }
 }
 @media screen and (max-width: 767px) {
